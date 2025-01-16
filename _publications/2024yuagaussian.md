@@ -2,7 +2,7 @@
 title: "A Gaussian variational inference approach to motion planning"
 collection: publications
 category: manuscripts
-permalink: /publication/2024-02-17-paper-title-number-4
+permalink: /publication/2024yuagaussian
 excerpt: #'This paper is about fixing template issue #693.'
 date: 2024-02-17
 venue: 'IEEE Robotics and Automation Letters'

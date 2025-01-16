@@ -2,7 +2,7 @@
 title: "Covariance Steering for Nonlinear Control-affine Systems"
 collection: publications
 category: manuscripts
-permalink: /publication/2024-02-17-paper-title-number-4
+permalink: /publication/2023yucovariance
 excerpt: #'This paper is about fixing template issue #693.'
 date: 2023-03-24
 venue: 'AIMS Mathematics, Accepted'
