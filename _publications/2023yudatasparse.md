@@ -2,7 +2,7 @@
 title: "Data-driven optimal control under safety constraints using sparse Koopman approximation"
 collection: publications
 category: conferences
-permalink: /publication/2024-02-17-paper-title-number-4
+permalink: /publication/2023yudatasparse
 excerpt: #'This paper is about fixing template issue #693.'
 date: 2023-06-01
 venue: '2023 IEEE International Conference on Robotics and Automation (ICRA)'

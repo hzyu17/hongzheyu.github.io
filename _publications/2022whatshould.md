@@ -2,7 +2,7 @@
 title: "What should be the input: Investigating the environment representations in sim-to-real transfer for navigation tasks"
 collection: publications
 category: manuscripts
-permalink: /publication/2015-10-01-paper-title-number-3
+permalink: /publication/2022whatshould
 excerpt: #'This paper is about the number 3. The number 4 is left for future work.'
 date: 2022-07-01
 venue: 'Robotics and Autonomous Systems'

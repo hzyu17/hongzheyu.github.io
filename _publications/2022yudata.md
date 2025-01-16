@@ -2,7 +2,7 @@
 title: "Data-driven optimal control of nonlinear dynamics under safety constraints"
 collection: publications
 category: manuscripts
-permalink: /publication/2010-10-01-paper-title-number-2
+permalink: /publication/2022yudata
 excerpt: #'This paper is about the number 2. The number 3 is left for future work.'
 date: 2022-01-07
 venue: 'IEEE Control Systems Letters'
