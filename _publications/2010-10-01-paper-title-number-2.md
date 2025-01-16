@@ -3,7 +3,7 @@ title: "Data-driven optimal control of nonlinear dynamics under safety constrain
 collection: publications
 category: manuscripts
 permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
+excerpt: #'This paper is about the number 2. The number 3 is left for future work.'
 date: 2022-01-07
 venue: 'IEEE Control Systems Letters'
 slidesurl: #'http://academicpages.github.io/files/slides2.pdf'
