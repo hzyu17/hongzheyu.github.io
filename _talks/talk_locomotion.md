@@ -1,5 +1,5 @@
 ---
-title: "`Planning, Control, and Inference for Robotic Systems under Uncertainties'"
+title: "Planning, Control, and Inference for Robotic Systems under Uncertainties"
 collection: talks
 type: "Talk"
 permalink: /talks/talk_locomotion
