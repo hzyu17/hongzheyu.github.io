@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hello World"
+title: "Hongzhe Yu"
 author_profile: true
 redirect_from: 
   - /about/
