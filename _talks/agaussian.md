@@ -7,5 +7,3 @@ venue: "IEEE/RSJ IROS 2024"
 date: 2024-05-30
 location: "Detroit, MI, USA"
 ---
-
-This is a description of your conference proceedings talk, note the different field in type. You can put anything in this field.
