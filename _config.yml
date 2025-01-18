@@ -21,7 +21,7 @@ repository               : "hzyu17/hongzheyu.github.io" #"academicpages/academic
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/profile.png"
+  avatar           : "profile.png"
   name             : "Infos and Websites"
   pronouns         : # example: "she/her"  
   bio              : # "Short biography for the left-hand sidebar"
