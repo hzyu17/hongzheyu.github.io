@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hello there, I'm Hongzhe Yu!"
+title: "Welcome to the personal website of Hongzhe Yu. Learn more about my research, projects, and academic achievements."
 author_profile: true
 redirect_from: 
   - /about/
