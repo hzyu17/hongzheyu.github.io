@@ -22,7 +22,7 @@ repository               : "hzyu17/hongzheyu.github.io" #"academicpages/academic
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Infos and Websites"
+  name             : "About"
   pronouns         : # example: "she/her"  
   bio              : # "Short biography for the left-hand sidebar"
   location         : "Atlanta, Georgia, USA"
