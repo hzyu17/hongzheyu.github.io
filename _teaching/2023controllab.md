@@ -4,6 +4,6 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2023controllab
 venue: "Georgia Tech, AE department"
-date: 2014-01-01
+date: 2023
 location: "Atlanta, USA"
 ---
