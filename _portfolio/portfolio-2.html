@@ -1,7 +1,7 @@
 ---
 title: "Gaussian Variational Inference Motion Planning"
-excerpt: "Short description of portfolio item number 2 <br/><img src='/images/500x300.png'>"
+excerpt: " This project studies the motion planning problem under uncertainty using Gaussian Variational Inference techniques. <br/><img src='/images/gvimp_2d_all.png'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+There is an interesting "control-inference duality", which states that the optimal control problem can be transformed into an inference problem under certaint assumption. This project studies the motion planning problem under uncertainty using Gaussian Variational Inference techniques. The goal is to find the optimal control policy that minimizes the expected cost of reaching the goal state while avoiding obstacles. The problem is formulated in the continuous-time domain and solved using the Gaussian Variational Inference (GVI) method. The GVI method approximates the posterior distribution of the hidden states using a Gaussian distribution. Sparsity of the problem is leveraged to propose a parallelizable algorithm on GPU. The proposed method is evaluated on various robot models: point robot, planar quadrotor, and robot manipulator. Our proposed method outperforms the state-of-the-art planning-as-inference methods in terms of optimallity and robustness in face of uncertainty.
