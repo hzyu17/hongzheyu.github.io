@@ -1,6 +1,6 @@
 ---
 title: "Convex optimal control using Koopman operator"
-excerpt: "This project studies the infinite-time horizon optimal control problem under safety constraints in its dual form by leveraging the Koopman operator. <br/><img src='/images/500x300.png'>"
+excerpt: "This project studies the infinite-time horizon optimal control problem under safety constraints in its dual form by leveraging the Koopman operator. <br/><img src='https://hzyu17.github.io/hongzheyu.github.io/images/data_driven.png'>"
 collection: portfolio
 ---
 
