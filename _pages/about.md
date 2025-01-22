@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Welcome to the personal website of Hongzhe Yu. Learn more about my research interests and cool projects here!"
+title: "Hongzhe Yu: Bio, research interests and some cool projects.."
 author_profile: true
 redirect_from: 
   - /about/
