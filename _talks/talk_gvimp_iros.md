@@ -8,4 +8,4 @@ date: 2024-05-30
 location: "Detroit, MI, USA"
 ---
 
-[slides](https://hzyu17.github.io/hongzheyu.github.io/files/GVIMP_slides_IROS2023.pdf)
+[slides](https://hzyu17.github.io/hongzheyu.github.io/files/GVIMP_slides_IROS2023.pdf), [video](https://www.youtube.com/watch?app=desktop&v=Ry5kYGngFuw)
