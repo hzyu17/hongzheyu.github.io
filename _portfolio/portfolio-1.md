@@ -1,15 +1,15 @@
 ---
-title: "Convex optimal control using Koopman operator"
-excerpt: "This project studies the infinite-time horizon optimal control problem under safety constraints in its dual form by leveraging the Koopman operator. <br/>"
+title: "Gaussian Variational Inference Motion Planning"
+excerpt: " This project studies the motion planning problem under uncertainty using Gaussian Variational Inference techniques. <br/>"
 collection: portfolio
 ---
 
-In this project, we use the Koopman operator and its dual operator to lift the optimal control problem into the space of measure, resulting in a convex optimization problem equivalent to the original optimal control problem. We then use the Sum-of-Squares (SOS) techniques to solve this optimization to obtain the optimal control signal and the controlled trajectory. The safety constraint can be naturally incoporated into our framework by using indicator functions in the measure space and be lifted as costs. For semi-algebraic sets, the whole program end up being a convex program and can be solved using off-the-shelf solvers.
+There is an interesting "control-inference duality", which states that the optimal control problem can be transformed into an inference problem under certaint assumption. This project studies the motion planning problem under uncertainty using Gaussian Variational Inference techniques. The goal is to find the optimal control policy that minimizes the expected cost of reaching the goal state while avoiding obstacles. The problem is formulated in the continuous-time domain and solved using the Gaussian Variational Inference (GVI) method. The GVI method approximates the posterior distribution of the hidden states using a Gaussian distribution. Sparsity of the problem is leveraged to propose a parallelizable algorithm on GPU. The proposed method is evaluated on various robot models: point robot, planar quadrotor, and robot manipulator. Our proposed method outperforms the state-of-the-art planning-as-inference methods in terms of optimallity and robustness in face of uncertainty.
 
 Formulation
 
-<img src='https://hzyu17.github.io/hongzheyu.github.io/images/formulation_data_driven_SOS.png'>
+<img src='https://hzyu17.github.io/hongzheyu.github.io/images/formulation_gvimp.png'>
 
 Results
 
-<img src='https://hzyu17.github.io/hongzheyu.github.io/images/data_driven.png'>
+<img src='https://hzyu17.github.io/hongzheyu.github.io/images/gvimp_2d_all.png'>

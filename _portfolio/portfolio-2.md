@@ -1,15 +1,17 @@
 ---
-title: "Gaussian Variational Inference Motion Planning"
-excerpt: " This project studies the motion planning problem under uncertainty using Gaussian Variational Inference techniques. <br/>"
+title: "Covariance Control for Hybrid Systems"
+excerpt: " This project studies covariance control for linear stochastic systems with hybrid transitions. <br/>"
 collection: portfolio
 ---
 
-There is an interesting "control-inference duality", which states that the optimal control problem can be transformed into an inference problem under certaint assumption. This project studies the motion planning problem under uncertainty using Gaussian Variational Inference techniques. The goal is to find the optimal control policy that minimizes the expected cost of reaching the goal state while avoiding obstacles. The problem is formulated in the continuous-time domain and solved using the Gaussian Variational Inference (GVI) method. The GVI method approximates the posterior distribution of the hidden states using a Gaussian distribution. Sparsity of the problem is leveraged to propose a parallelizable algorithm on GPU. The proposed method is evaluated on various robot models: point robot, planar quadrotor, and robot manipulator. Our proposed method outperforms the state-of-the-art planning-as-inference methods in terms of optimallity and robustness in face of uncertainty.
+Robotic systems in contact with the environment can be modeled as hybrid systems, yet controlling them under disturbances is challenging due to discontinuous jump dynamics, varying state dimensions, and noise-induced timing shifts. 
+
+For \textit{linear} stochastic flows with hybrid transitions, I developed Hybrid Covariance Steering (H-CS) to control state covariances around a mean trajectory, approximating jump dynamics with the Saltation Matrix. When jumps are nonsingular, this yields a closed-form solution; otherwise, a convex optimization over path distributions is formulated via Schrodinger’s Bridge duality, enforcing covariance propagation at hybrid events as equality constraints. This approach scales linearly with the number of jumps, enabling efficient, optimal solutions.
 
 Formulation
 
-<img src='https://hzyu17.github.io/hongzheyu.github.io/images/formulation_gvimp.png'>
+<img src='https://hzyu17.github.io/hongzheyu.github.io/images/formulation_hcs.png'>
 
 Results
 
-<img src='https://hzyu17.github.io/hongzheyu.github.io/images/gvimp_2d_all.png'>
+<img src='https://hzyu17.github.io/hongzheyu.github.io/images/h_cs_slip_samples.png'>
