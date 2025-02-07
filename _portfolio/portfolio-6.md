@@ -1,9 +1,9 @@
 ---
-title: "Decentralized field coverage Control using Micro drone swarm"
-excerpt: " This project implements a de-centralized coverage control strategy on a swarm of micro drones hardware under external state estimations (Vicon mocap system). <br/>"
+title: "Centralized Control of Micro Drones"
+excerpt: " This project implements a centralized control framework on a swarm of micro drones hardware under external state estimations (Vicon mocap system). <br/>"
 collection: portfolio
 ---
 
-Control law based on the bell-form modeling of the sensor capability and the coverage task. Velocity output is the vector sum of the attractions within the sensor range. Deadlock problem solved by switching control strategy, and collision avoidance achieved by using artificial potential fields.
+Swarm of drones are hard to control due to communication latencies, state estimation, and mutual interference. This project implements a centralized control framework on a swarm drone formuation hardwares with available state estimation given by the Vicon Motion Capture System.
 
-[Video link](https://www.youtube.com/watch?v=SJ7_cbu2aSc)
+[Video link](https://www.youtube.com/watch?v=_4cwPoaPelc)
