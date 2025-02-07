@@ -1,6 +1,6 @@
 ---
 title: "Environment representation in sim-to-real imitation learning based robot navigation"
-excerpt: "This project studies the . <br/>"
+excerpt: "This project studies the impact of different sensor fusion methods on an imitation-learning based control strategy. <br/>"
 collection: portfolio
 ---
 
