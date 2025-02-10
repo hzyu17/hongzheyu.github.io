@@ -1,15 +1,28 @@
 ---
-title: "Convex optimal control using Koopman operator"
-excerpt: "This project studies the infinite-time horizon optimal control problem under safety constraints in its dual form by leveraging the Koopman operator. <br/>"
+title: "Path Integral Control for Partially Observed Systems"
+excerpt: " This project studies path integral control for nonlinear stochastic systems with partial observations. <br/>"
 collection: portfolio
 ---
 
-In this project, we use the Koopman operator and its dual operator to lift the optimal control problem into the space of measure, resulting in a convex optimization problem equivalent to the original optimal control problem. We then use the Sum-of-Squares (SOS) techniques to solve this optimization to obtain the optimal control signal and the controlled trajectory. The safety constraint can be naturally incoporated into our framework by using indicator functions in the measure space and be lifted as costs. For semi-algebraic sets, the whole program end up being a convex program and can be solved using off-the-shelf solvers.
+This study considers a partially observed optimal control problem in which the state is measured through a noisy output, focusing on continuous-time and continuous-space settings.
+To develop a control algorithm for this challenging problem, we extend the so-called fully observable value approximation, originally developed for the partially observable Markov decision problems (POMDPs) in discrete-time and discrete-space domains, to the continuous ones.
+The approximation yields a suboptimal controller with a structure analogous to that of a controller obtained through the separation principle for the so-called linear-quadratic settings.
+Combined with the path integral control method, the proposed extension allows for a suboptimal policy synthesis for partially observable systems.
 
 Formulation
 
-<img src='https://hzyu17.github.io/hongzheyu.github.io/images/formulation_data_driven_SOS.png'>
+Optimal Control Objective:
 
-Results
+<img src='https://hzyu17.github.io/hongzheyu.github.io/images/ocp.png'>
 
-<img src='https://hzyu17.github.io/hongzheyu.github.io/images/data_driven.png'>
+Dynamical System and Measurement Models:
+
+<img src='https://hzyu17.github.io/hongzheyu.github.io/images/models.png'>
+
+Method:
+
+<img src='https://hzyu17.github.io/hongzheyu.github.io/images/method_POMDP.png'>
+
+Results: out-performed EKF+iLQG
+
+<img src='https://hzyu17.github.io/hongzheyu.github.io/images/result_POMDP.png'>

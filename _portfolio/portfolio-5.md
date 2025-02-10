@@ -1,14 +1,15 @@
 ---
-title: "Environment representation in sim-to-real imitation learning based robot navigation"
-excerpt: "This project studies the impact of different sensor fusion methods on an imitation-learning based control strategy. <br/>"
+title: "Convex optimal control using Koopman operator"
+excerpt: "This project studies the infinite-time horizon optimal control problem under safety constraints in its dual form by leveraging the Koopman operator. <br/>"
 collection: portfolio
 ---
 
-In this project, we studied the impact of environment representations (sensor data fusion) in imitation-learning based sim-to-real robot navigation tasks. We applied different sensor data fusion methods on raw data collected in a simulated (ROS Gazebo) environment, and feeded the fused data to train a neural network that learns a local collision-avoiding policy for navigation tasks. The model was then deployed directly in real-world hardwares for similar tasks. We tested the test-time performances under fused sensor data inputs from different representations. We found that the categorical and semantic information are more critical than textual and color information for navigation tasks.
+In this project, we use the Koopman operator and its dual operator to lift the optimal control problem into the space of measure, resulting in a convex optimization problem equivalent to the original optimal control problem. We then use the Sum-of-Squares (SOS) techniques to solve this optimization to obtain the optimal control signal and the controlled trajectory. The safety constraint can be naturally incoporated into our framework by using indicator functions in the measure space and be lifted as costs. For semi-algebraic sets, the whole program end up being a convex program and can be solved using off-the-shelf solvers.
 
 Formulation
 
-<img src='https://hzyu17.github.io/hongzheyu.github.io/images/local_navigation_method.png'>
+<img src='https://hzyu17.github.io/hongzheyu.github.io/images/formulation_data_driven_SOS.png'>
 
+Results
 
-[Video Introduction](https://youtu.be/ucGyuMjlgEk)
+<img src='https://hzyu17.github.io/hongzheyu.github.io/images/data_driven.png'>

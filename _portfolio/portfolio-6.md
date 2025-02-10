@@ -1,9 +1,14 @@
 ---
-title: "Centralized Control of Micro Drones"
-excerpt: " This project implements a centralized control framework on a swarm of micro drones hardware under external state estimations (Vicon mocap system). <br/>"
+title: "Environment representation in sim-to-real imitation learning based robot navigation"
+excerpt: "This project studies the impact of different sensor fusion methods on an imitation-learning based control strategy. <br/>"
 collection: portfolio
 ---
 
-Swarm of drones are hard to control due to communication latencies, state estimation, and mutual interference. This project implements a centralized control framework on a swarm drone formuation hardwares with available state estimation given by the Vicon Motion Capture System.
+In this project, we studied the impact of environment representations (sensor data fusion) in imitation-learning based sim-to-real robot navigation tasks. We applied different sensor data fusion methods on raw data collected in a simulated (ROS Gazebo) environment, and feeded the fused data to train a neural network that learns a local collision-avoiding policy for navigation tasks. The model was then deployed directly in real-world hardwares for similar tasks. We tested the test-time performances under fused sensor data inputs from different representations. We found that the categorical and semantic information are more critical than textual and color information for navigation tasks.
 
-[Video link](https://www.youtube.com/watch?v=_4cwPoaPelc)
+Formulation
+
+<img src='https://hzyu17.github.io/hongzheyu.github.io/images/local_navigation_method.png'>
+
+
+[Video Introduction](https://youtu.be/ucGyuMjlgEk)
