@@ -26,3 +26,5 @@ Method:
 Results: out-performed EKF+iLQG
 
 <img src='https://hzyu17.github.io/hongzheyu.github.io/images/result_POMDP.png'>
+
+<img src='https://hzyu17.github.io/hongzheyu.github.io/images/result_table_POMDP.png'>
