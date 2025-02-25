@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hongzhe Yu: Bio, research interests and some cool projects.."
+title: "About me"
 author_profile: true
 redirect_from: 
   - /about/
