@@ -12,4 +12,4 @@ Formulation
 
 Results
 
-<img src='https://hzyu17.github.io/hongzheyu.github.io/images/gvimp_2d_all.png'>
+<video src='https://hzyu17.github.io/hongzheyu.github.io/images/hardware experiment results.gif'>
