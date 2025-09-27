@@ -4,9 +4,13 @@ excerpt: " This project studies path integral control for nonlinear stochastic s
 collection: portfolio
 ---
 
-Robotic systems in contact with the environment can be modeled as hybrid systems, yet controlling them under disturbances is challenging due to discontinuous jump dynamics, varying state dimensions, and noise-induced timing shifts. 
+### Controlling Complex Robots
 
-For \textit{nonlinear} flows, I introduced the Hybrid Path Integral (H-PI) framework, leveraging an analogous ratio among hybrid path distributions to derive the optimal controller via a path integral. Importance sampling with a Hybrid iLQR-based proposal distribution reduces variance, and extensive numerical experiments confirm the effectiveness of both methods across various hybrid systems.
+Controlling robots that interact with their environment is difficult because their movements have sudden changes and are affected by noise.
+
+My research introduces the **Hybrid Path Integral (H-PI)** framework to solve this problem for complex, **nonlinear** systems. H-PI finds the best control method by analyzing all possible paths a robot could take.
+
+To make this process more efficient, I used a technique called **importance sampling** with a specific proposal distribution. This approach significantly improved the accuracy of the control system. Our experiments on various robotic systems proved that both methods are effective and reliable.
 
 Formulation
 

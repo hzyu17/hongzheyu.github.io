@@ -4,9 +4,16 @@ excerpt: " This project studies covariance control for linear stochastic systems
 collection: portfolio
 ---
 
-Robotic systems in contact with the environment can be modeled as hybrid systems, yet controlling them under disturbances is challenging due to discontinuous jump dynamics, varying state dimensions, and noise-induced timing shifts. 
+### Controlling Robots in Contact with the Environment
 
-For \textit{linear} stochastic flows with hybrid transitions, I developed Hybrid Covariance Steering (H-CS) to control state covariances around a mean trajectory, approximating jump dynamics with the Saltation Matrix. When jumps are nonsingular, this yields a closed-form solution; otherwise, a convex optimization over path distributions is formulated via Schrodinger’s Bridge duality, enforcing covariance propagation at hybrid events as equality constraints. This approach scales linearly with the number of jumps, enabling efficient, optimal solutions.
+Robots that touch things, like a hand gripping an object, are hard to control because their movements involve sudden changes, varying states, and noise. 
+
+My research introduces **Hybrid Covariance Steering (H-CS)**, a method to control these robots. Instead of focusing on every tiny movement, H-CS guides the robot's overall behavior to stay on a desired path.
+
+* For simple changes, a quick, direct solution can be found.
+* For more complex changes, the problem is turned into a solvable puzzle.
+
+This approach is highly efficient, as its complexity scales linearly with the number of sudden movements the robot makes. It provides a fast and optimal solution for a challenging problem in robotics.
 
 Formulation
 

@@ -4,10 +4,13 @@ excerpt: " This project studies path integral control for nonlinear stochastic s
 collection: portfolio
 ---
 
-This study considers a partially observed optimal control problem in which the state is measured through a noisy output, focusing on continuous-time and continuous-space settings.
-To develop a control algorithm for this challenging problem, we extend the so-called fully observable value approximation, originally developed for the partially observable Markov decision problems (POMDPs) in discrete-time and discrete-space domains, to the continuous ones.
-The approximation yields a suboptimal controller with a structure analogous to that of a controller obtained through the separation principle for the so-called linear-quadratic settings.
-Combined with the path integral control method, the proposed extension allows for a suboptimal policy synthesis for partially observable systems.
+### Controlling Systems with Incomplete Information 
+
+This research focuses on controlling a system when you can't see its full state directly, and instead must rely on **noisy measurements**. This is a **partially observed control problem**. 
+
+To solve this, we adapted a method called **fully observable value approximation**—originally for simple, discrete systems—to work in continuous, real-world environments. 
+
+The resulting algorithm provides a controller that's similar to those used in simpler linear systems. By combining it with the **path integral control method**, our approach allows us to create an effective control strategy for systems where our information is incomplete.
 
 Formulation
 
