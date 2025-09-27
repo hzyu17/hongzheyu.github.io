@@ -1,6 +1,8 @@
 ---
 title: "Gaussian Variational Inference Motion Planning"
 excerpt: " This project studies the motion planning problem under uncertainty using Gaussian Variational Inference techniques. <br/>"
+title: "Gaussian Variational Inference Motion Planning"
+excerpt: " This project studies the motion planning problem under uncertainty using Gaussian Variational Inference techniques. <br/>"
 collection: portfolio
 ---
 
