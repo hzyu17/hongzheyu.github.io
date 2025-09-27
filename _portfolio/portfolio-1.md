@@ -10,7 +10,7 @@ There is an interesting "control-inference duality", which states that the optim
 
 <img src='https://hzyu17.github.io/hongzheyu.github.io/images/formulation_gvimp.png'>
 
-### Results
+### Results: [(More results available in this video)](https://www.youtube.com/watch?v=c4sFOlEki0Q) 
 
 <img src='https://hzyu17.github.io/hongzheyu.github.io/images/RRTConnect_disturbed.png'>
 
@@ -19,3 +19,24 @@ There is an interesting "control-inference duality", which states that the optim
 ### Video 
 
 [Hardware experiment results]()
+
+#### 7-DOF Robot Arm: Comparison with classical sampling based planning algorithm (RRT-Connect)
+<div style="display:flex; justify-content:center; gap:2rem;">
+  <figure style="margin:0; text-align:center;">
+    <img src="https://hzyu17.github.io/hongzheyu.github.io/images/RRTConnect_disturbed.png"
+         alt="RRTConnect disturbed"
+         style="max-width:100%; height:auto;">
+    <figcaption style="margin-top:0.4em; font-style:italic;">
+      (a) RRT-Connect 
+    </figcaption>
+  </figure>
+
+  <figure style="margin:0; text-align:center;">
+    <img src="https://hzyu17.github.io/hongzheyu.github.io/images/GVIMP_disturbed.png"
+         alt="GVIMP disturbed"
+         style="max-width:100%; height:auto;">
+    <figcaption style="margin-top:0.4em; font-style:italic;">
+      (b) GVIMP 
+    </figcaption>
+  </figure>
+</div>
