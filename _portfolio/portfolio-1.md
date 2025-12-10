@@ -1,47 +1,40 @@
 ---
 title: "Gaussian Variational Inference Motion Planning"
-excerpt: " Solve Motion Planning Problem under Uncertainty using Variational Inference. <br/>"
-
+excerpt: "Leveraging control-inference duality for robust motion planning under uncertainty via Gaussian Variational Inference."
 collection: portfolio
 ---
 
-This project applies Gaussian Variational Inference (GVI) to solve motion planning problems under uncertainty, a method inspired by the "control-inference duality."
+This project leverages **Gaussian Variational Inference (GVI)** to address motion planning under uncertainty, grounded in the framework of control-inference duality.
 
-The objective is to find the best way for a robot to reach a goal, minimizing cost and avoiding obstacles, even when faced with uncertainty. We formulate the problem in a continuous-time framework and use GVI to approximate the robot's possible paths as a Gaussian distribution.
+We formulate the planning objective as a continuous-time trajectory optimization problem. By approximating the trajectory distribution as a Gaussian, our method simultaneously minimizes control costs and obstacle collision risks. The algorithm exploits the problem's inherent sparsity to enable efficient, parallelizable GPU execution.
 
-By leveraging the problem's sparsity, we developed an algorithm that can run in parallel on a GPU, significantly improving performance. Our approach has been successfully tested on various robots, including a point robot, a quadrotor, and a manipulator. The results show that our method is more optimal and robust than other leading planning-as-inference techniques.
+Validated on point robots, quadrotors, and manipulators, this approach demonstrates superior optimality and robustness compared to state-of-the-art planning-as-inference techniques.
 
 ### Formulation
+<img src='https://hzyu17.github.io/hongzheyu.github.io/images/formulation_gvimp.png' style="width:100%; max-width:800px;">
 
-<img src='https://hzyu17.github.io/hongzheyu.github.io/images/formulation_gvimp.png'>
+### Video Demonstration
+[Watch the detailed results and experiments here](https://www.youtube.com/watch?v=c4sFOlEki0Q)
 
-### Results: [(More results available in this video)](https://www.youtube.com/watch?v=c4sFOlEki0Q) 
+### Results: 7-DOF Robot Arm Comparison
+*Comparison of robustness against disturbances between classical RRT-Connect and our GVIMP method.*
 
-<img src='https://hzyu17.github.io/hongzheyu.github.io/images/RRTConnect_disturbed.png'>
-
-<img src='https://hzyu17.github.io/hongzheyu.github.io/images/GVIMP_disturbed.png'>
-
-### Video 
-
-[Hardware experiment results]()
-
-#### 7-DOF Robot Arm: Comparison with classical sampling based planning algorithm (RRT-Connect)
-<div style="display:flex; justify-content:center; gap:2rem;">
+<div style="display:flex; justify-content:center; gap:2rem; margin-top: 1em;">
   <figure style="margin:0; text-align:center;">
     <img src="https://hzyu17.github.io/hongzheyu.github.io/images/RRTConnect_disturbed.png"
-         alt="RRTConnect disturbed"
-         style="max-width:100%; height:auto;">
-    <figcaption style="margin-top:0.4em; font-style:italic;">
-      (a) RRT-Connect 
+         alt="RRT-Connect Performance"
+         style="max-width:100%; height:auto; border: 1px solid #ddd;">
+    <figcaption style="margin-top:0.5em; font-style:italic; font-size: 0.9em;">
+      (a) RRT-Connect (Baseline)
     </figcaption>
   </figure>
 
   <figure style="margin:0; text-align:center;">
     <img src="https://hzyu17.github.io/hongzheyu.github.io/images/GVIMP_disturbed.png"
-         alt="GVIMP disturbed"
-         style="max-width:100%; height:auto;">
-    <figcaption style="margin-top:0.4em; font-style:italic;">
-      (b) GVIMP 
+         alt="GVIMP Performance"
+         style="max-width:100%; height:auto; border: 1px solid #ddd;">
+    <figcaption style="margin-top:0.5em; font-style:italic; font-size: 0.9em;">
+      (b) GVIMP (Ours)
     </figcaption>
   </figure>
 </div>

@@ -1,9 +1,16 @@
 ---
-title: "Centralized Control of Micro Drones"
-excerpt: " This project implements a centralized control framework on a swarm of micro drones hardware under external state estimations (Vicon mocap system). <br/>"
+title: "Centralized Control of Micro-Drone Swarms"
+excerpt: "Implementing a centralized control framework for micro-drone swarms using external Vicon motion capture for state estimation."
 collection: portfolio
 ---
 
-Swarm of drones are hard to control due to communication latencies, state estimation, and mutual interference. This project implements a centralized control framework on a swarm drone formuation hardwares with available state estimation given by the Vicon Motion Capture System.
+### Precision Formation Control
 
-[Video link](https://www.youtube.com/watch?v=_4cwPoaPelc)
+Controlling drone swarms presents significant challenges due to **communication latencies**, **state estimation noise**, and **aerodynamic interference** between agents.
+
+This project implements a **centralized control framework** on a custom micro-drone platform. By leveraging the **Vicon Motion Capture System** for high-precision external state estimation, we achieved coordinated flight and stable formation control despite these inherent hardware limitations.
+
+### Video Demonstration
+<div style="text-align: center;">
+  <a href="https://www.youtube.com/watch?v=_4cwPoaPelc">Watch the hardware experiment here</a>
+</div>

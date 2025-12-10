@@ -1,9 +1,18 @@
 ---
-title: "Decentralized field coverage Control using Micro drone swarm"
-excerpt: " This project implements a de-centralized coverage control strategy on a swarm of micro drones hardware under external state estimations (Vicon mocap system). <br/>"
+title: "Decentralized Field Coverage with Micro-Drone Swarms"
+excerpt: "Implementing a decentralized coverage control strategy on micro-drone hardware with collision avoidance and deadlock resolution."
 collection: portfolio
 ---
 
-Control law based on the bell-form modeling of the sensor capability and the coverage task. Velocity output is the vector sum of the attractions within the sensor range. Deadlock problem solved by switching control strategy, and collision avoidance achieved by using artificial potential fields.
+### Autonomous Area Coverage
 
-[Video link](https://www.youtube.com/watch?v=SJ7_cbu2aSc)
+This project implements a **decentralized control strategy** for optimal area coverage using a swarm of micro-drones, validated on hardware using Vicon motion capture.
+
+**Methodology:**
+* **Sensor Modeling:** We model sensor efficacy using a bell-shaped function. The control law drives the drones to maximize total area coverage based on the vector sum of attraction forces within their sensor range.
+* **Robustness & Safety:** We integrated a switching control strategy to resolve local minima (deadlocks) and employed **Artificial Potential Fields (APF)** to ensure real-time collision avoidance between agents.
+
+### Video Demonstration
+<div style="text-align: center;">
+  <a href="https://www.youtube.com/watch?v=SJ7_cbu2aSc">Watch the coverage experiment</a>
+</div>

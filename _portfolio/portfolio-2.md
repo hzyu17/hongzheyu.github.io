@@ -1,24 +1,31 @@
 ---
 title: "Covariance Control for Hybrid Systems"
-excerpt: " This project studies covariance control for linear stochastic systems with hybrid transitions. <br/>"
+excerpt: "Optimal covariance steering for linear stochastic systems with hybrid transitions, applicable to contact-rich robotics."
 collection: portfolio
 ---
 
-### Controlling Robots in Contact with the Environment
+### Controlling Robots in Contact-Rich Environments
 
-Robots that touch things, like a hand gripping an object, are hard to control because their movements involve sudden changes, varying states, and noise. 
+Controlling robotic systems in contact-rich environments (e.g., legged locomotion or manipulation) is challenging due to the presence of hybrid dynamics—systems that involve both continuous evolution and discrete mode switches—compounded by stochastic noise.
 
-My research introduces **Hybrid Covariance Steering (H-CS)**, a method to control these robots. Instead of focusing on every tiny movement, H-CS guides the robot's overall behavior to stay on a desired path.
+This research introduces **Hybrid Covariance Steering (H-CS)**, a control framework designed to steer the distribution of the system state across hybrid transitions. Rather than tracking a single deterministic trajectory, H-CS regulates the covariance of the system state to ensure robust performance.
 
-* For simple changes, a quick, direct solution can be found.
-* For more complex changes, the problem is turned into a solvable puzzle.
+**Key Contributions:**
+* **Closed-Form Solutions:** For systems with fixed mode sequences, we derive explicit, closed-form optimal control policies.
+* **Convex Optimization:** For autonomous mode-switching, we reformulate the intractable problem into a convex Semi-Definite Program (SDP).
+* **Scalability:** The approach is computationally efficient, scaling linearly with the number of hybrid jumps, providing a fast and optimal solution for complex stochastic systems.
 
-This approach is highly efficient, as its complexity scales linearly with the number of sudden movements the robot makes. It provides a fast and optimal solution for a challenging problem in robotics.
+### Mathematical Formulation
+The problem is framed as steering the state distribution through a sequence of hybrid jumps while minimizing control effort and state deviation.
 
-Formulation
+<img src='https://hzyu17.github.io/hongzheyu.github.io/images/formulation_hcs.png' style="width:100%; max-width:800px; margin-bottom: 20px;">
 
-<img src='https://hzyu17.github.io/hongzheyu.github.io/images/formulation_hcs.png'>
+### Equivalent Convex SDP Formulation
+By lifting the dynamics into a higher-dimensional space, we convert the covariance steering problem into a solvable convex optimization problem.
 
-Results
+<img src='https://hzyu17.github.io/hongzheyu.github.io/images/hcs_SDP.png' style="width:100%; max-width:800px; margin-bottom: 20px;">
 
-<img src='https://hzyu17.github.io/hongzheyu.github.io/images/h_cs_slip_samples.png'>
+### Results: Stochastic Spring-Loaded Inverted Pendulum (SLIP)
+The figure below demonstrates the H-CS controller applied to a SLIP model. The algorithm successfully regulates the state distribution (shown as ellipses) through ground impacts, maintaining stability despite stochastic disturbances.
+
+<img src='https://hzyu17.github.io/hongzheyu.github.io/images/h_cs_slip_samples_stable.png' style="width:100%; max-width:600px;">

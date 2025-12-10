@@ -1,20 +1,22 @@
 ---
-title: "Environment representation in sim-to-real imitation learning based robot navigation"
-excerpt: "This project studies the impact of different sensor fusion methods on an imitation-learning based control strategy. <br/>"
+title: "Environment Representation in Sim-to-Real Imitation Learning"
+excerpt: "Evaluating the impact of sensor fusion and semantic abstraction on sim-to-real transfer for robot navigation."
 collection: portfolio
 ---
 
-### Improving Robot Navigation with Better Sensor Data
+### Bridging the Sim-to-Real Gap via Semantic Representations
 
-In this project, we studied how a robot's ability to navigate from a simulated environment to the real world is affected by the way it "sees" its surroundings.
+This project investigates how different environmental representations affect the transfer of navigation policies from simulation to the real world (**Sim-to-Real**).
 
-We used a **neural network** to teach a robot to avoid collisions by having it learn from sensor data collected in a simulation. Before feeding the data to the network, we combined information from different sensors.
+We employed an **imitation learning** framework to train a collision-avoidance policy using synthetic sensor data. The core study focused on evaluating various sensor fusion strategies before feeding the data into the neural control policy.
 
-When we deployed the robot in the real world, we tested how well it performed with different types of sensor data. Our main finding was that **categorical and semantic information**—such as identifying an object as a chair versus a table—was more important for successful navigation than simple color or texture information.
+**Key Findings:**
+Real-world experiments revealed that **categorical and semantic information** (e.g., semantic segmentation) is far more critical for robust navigation than low-level visual features like color or texture. This suggests that abstracting the environment is key to successful sim-to-real transfer.
 
-Formulation
+### Methodology & Network Architecture
+<div style="text-align: center;">
+    <img src='https://hzyu17.github.io/hongzheyu.github.io/images/local_navigation_method.png' style="width:100%; max-width:600px; margin: 0 auto;">
+</div>
 
-<img src='https://hzyu17.github.io/hongzheyu.github.io/images/local_navigation_method.png'>
-
-
-[Video Introduction](https://youtu.be/ucGyuMjlgEk)
+### Video Demonstration
+[Watch the experiment video](https://youtu.be/ucGyuMjlgEk)
