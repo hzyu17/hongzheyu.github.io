@@ -1,7 +1,7 @@
 ---
 title: "Efficient Iterative Proximal Variational Inference Motion Planning"
 collection: publications
-category: preprints
+category: manuscripts
 permalink: /publication/2024yuaccelerating
 excerpt: #'This paper is about fixing template issue #693.'
 date: 2024-11-05

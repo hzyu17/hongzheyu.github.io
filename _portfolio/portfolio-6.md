@@ -4,7 +4,13 @@ excerpt: "This project studies the impact of different sensor fusion methods on 
 collection: portfolio
 ---
 
-In this project, we studied the impact of environment representations (sensor data fusion) in imitation-learning based sim-to-real robot navigation tasks. We applied different sensor data fusion methods on raw data collected in a simulated (ROS Gazebo) environment, and feeded the fused data to train a neural network that learns a local collision-avoiding policy for navigation tasks. The model was then deployed directly in real-world hardwares for similar tasks. We tested the test-time performances under fused sensor data inputs from different representations. We found that the categorical and semantic information are more critical than textual and color information for navigation tasks.
+### Improving Robot Navigation with Better Sensor Data
+
+In this project, we studied how a robot's ability to navigate from a simulated environment to the real world is affected by the way it "sees" its surroundings.
+
+We used a **neural network** to teach a robot to avoid collisions by having it learn from sensor data collected in a simulation. Before feeding the data to the network, we combined information from different sensors.
+
+When we deployed the robot in the real world, we tested how well it performed with different types of sensor data. Our main finding was that **categorical and semantic information**—such as identifying an object as a chair versus a table—was more important for successful navigation than simple color or texture information.
 
 Formulation
 
